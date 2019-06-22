@@ -1,10 +1,10 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='serverextension',
+    name='nbrest',
     version='1.0.0',
     url='',
-    author='Author Name',
+    author='N Brest you take, N move you make',
     author_email='author@gmail.com',
     description='Description of my package',
     packages=find_packages(),

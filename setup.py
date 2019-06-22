@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='serverextension',
+    name='nbrest',
     version='1.0.0',
     url='',
     author='N Brest you take, N move you make',

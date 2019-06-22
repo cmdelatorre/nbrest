@@ -6,3 +6,4 @@ def load_jupyter_server_extension(nb_server_app):
         nb_server_app (NotebookWebApplication): handle to the Notebook webserver instance.
     """
     print("loadeded...")
+    print('Its a trap')

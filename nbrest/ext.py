@@ -3,8 +3,6 @@ from notebook.base.handlers import IPythonHandler
 
 class HelloWorldHandler(IPythonHandler):
     def get(self):
-        print("pepeppepepeee")
-        import ipdb; ipdb.set_trace()
         self.finish('Hello, world!')
 
 def load_jupyter_server_extension(nb_server_app):
@@ -14,8 +12,8 @@ def load_jupyter_server_extension(nb_server_app):
     Args:
         nb_server_app (NotebookWebApplication): handle to the Notebook webserver instance.
     """
+    print('its a trap')
     web_app = nb_server_app.web_app
     host_pattern = '.*$'
     route_pattern = url_path_join(web_app.settings['base_url'], '/hello')
     web_app.add_handlers(host_pattern, [(route_pattern, HelloWorldHandler)])
-    print("loadedededededde")
